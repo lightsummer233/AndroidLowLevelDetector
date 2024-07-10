@@ -39,6 +39,7 @@
                 android:layout_alignParentEnd="true"
                 app:shapeAppearanceOverlay="@style/Circle"
                 tools:background="@color/colorNoProblem" />
+
         </RelativeLayout>
 
         <TextView
@@ -48,5 +49,7 @@
             android:textDirection="locale"
             android:textSize="16sp"
             tools:text="@string/android_info_detail" />
+
     </LinearLayout>
+
 </com.google.android.material.card.MaterialCardView>

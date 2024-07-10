@@ -16,8 +16,6 @@ android {
         minSdk = Versions.AndroidBuild.minSdk
         // targetSdkPreview = Versions.AndroidBuild.targetSdkPreview
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
         consumerProguardFiles("consumer-rules.pro")
     }
 
@@ -82,12 +80,6 @@ dependencies {
 
     api("androidx.savedstate:savedstate:${Versions.AndroidX.savedState}")
     // endregion [AndroidX]
-
-    // region [Test]
-    androidTestImplementation("androidx.test:core-ktx:${Versions.AndroidX.Test.core}")
-    androidTestImplementation("androidx.test.espresso:espresso-core:${Versions.AndroidX.Test.espressoCore}")
-    androidTestImplementation("androidx.test.ext:junit-ktx:${Versions.AndroidX.Test.extJunit}")
-    // endregion [Test]
 
     // region [Kotlin]
     api(kotlin("stdlib-jdk8:${Versions.Kotlin.kotlin}"))

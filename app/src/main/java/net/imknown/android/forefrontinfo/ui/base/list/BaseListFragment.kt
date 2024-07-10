@@ -80,11 +80,11 @@ abstract class BaseListFragment : BaseFragment<FragmentListBinding>() {
             windowInsets
         }
 
-        val color = MaterialColors.getColor(binding.root, materialR.attr.colorOnPrimaryContainer)
-        binding.swipeRefreshLayout.setColorSchemeColors(color)
-        val backgroundColor =
-            MaterialColors.getColor(binding.root, materialR.attr.colorPrimaryContainer)
-        binding.swipeRefreshLayout.setProgressBackgroundColorSchemeColor(backgroundColor)
+//        val color = MaterialColors.getColor(binding.root, materialR.attr.colorOnPrimaryContainer)
+//        binding.swipeRefreshLayout.setColorSchemeColors(color)
+//        val backgroundColor =
+//            MaterialColors.getColor(binding.root, materialR.attr.colorPrimaryContainer)
+//        binding.swipeRefreshLayout.setProgressBackgroundColorSchemeColor(backgroundColor)
 
         if (listViewModel.hasNoData(savedInstanceState)) {
             // When activity is recreated, data is filled by memory.

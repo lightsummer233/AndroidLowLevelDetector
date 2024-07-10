@@ -851,7 +851,7 @@ class HomeViewModel : BaseListViewModel(), IAndroidVersion {
                     @Suppress("Deprecation")
                     packageManager.getPackageInfo(moduleProvider, 0)
                 }
-                versionName = packageInfo.versionName
+                versionName = packageInfo.versionName.toString()
 
                 if (versionName >= latestGooglePlaySystemUpdates
                     || "$versionName-01" >= latestGooglePlaySystemUpdates
@@ -1153,7 +1153,7 @@ class HomeViewModel : BaseListViewModel(), IAndroidVersion {
                     val isInstalled = if (packageInfo != null) {
                         packageInfo.versionName.also {
                             if (Version(it).isHigherThan(builtInVersionName)) {
-                                builtInVersionName = it
+                                builtInVersionName = it.toString()
                             }
                         }
                     } else {
@@ -1169,7 +1169,7 @@ class HomeViewModel : BaseListViewModel(), IAndroidVersion {
 
                     var tempResult = packageName +
                             subFormat(description) +
-                            subFormat(isInstalled)
+                            subFormat(isInstalled.toString())
                     if (!availableByDefault) {
                         tempResult += subFormat(R.string.webview_must_be_chosen_by_user)
                     }

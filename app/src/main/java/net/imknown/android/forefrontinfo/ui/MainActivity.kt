@@ -20,7 +20,7 @@ import kotlinx.coroutines.launch
 import net.imknown.android.forefrontinfo.R
 import net.imknown.android.forefrontinfo.base.mvvm.IView
 import net.imknown.android.forefrontinfo.base.mvvm.viewBinding
-import net.imknown.android.forefrontinfo.databinding.MainActivityBinding
+import net.imknown.android.forefrontinfo.databinding.ActivityMainBinding
 import net.imknown.android.forefrontinfo.ui.home.HomeFragment
 import net.imknown.android.forefrontinfo.ui.others.OthersFragment
 import net.imknown.android.forefrontinfo.ui.prop.PropFragment
@@ -28,7 +28,7 @@ import net.imknown.android.forefrontinfo.ui.settings.SettingsFragment
 
 class MainActivity : AppCompatActivity(), IView {
 
-    private val binding by viewBinding(MainActivityBinding::inflate)
+    private val binding by viewBinding(ActivityMainBinding::inflate)
 
     private val mainViewModel by viewModels<MainViewModel>()
 

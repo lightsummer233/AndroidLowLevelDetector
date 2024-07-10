@@ -34,8 +34,6 @@ android {
         targetSdk = Versions.AndroidBuild.targetSdk
         // targetSdkPreview = Versions.AndroidBuild.targetSdkPreview
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
         resourceConfigurations.addAll(listOf("zh-rCN", "zh-rTW", "fr-rFR"))
 
         buildConfigField("String", "GIT_BRANCH", "\"$currentGitBranchName\"")
@@ -175,12 +173,6 @@ dependencies {
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:${Versions.AndroidX.swipeRefreshLayout}")
     implementation("androidx.webkit:webkit:${Versions.AndroidX.webkit}")
     // endregion [AndroidX]
-
-    // region [Test]
-    androidTestImplementation("androidx.test:core-ktx:${Versions.AndroidX.Test.core}")
-    androidTestImplementation("androidx.test.espresso:espresso-core:${Versions.AndroidX.Test.espressoCore}")
-    androidTestImplementation("androidx.test.ext:junit-ktx:${Versions.AndroidX.Test.extJunit}")
-    // endregion [Test]
 
     // region [3rd Parties]
     debugImplementation("com.squareup.leakcanary:leakcanary-android:${Versions.ThirdParties.leakCanary}")

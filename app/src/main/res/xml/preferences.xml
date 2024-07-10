@@ -6,6 +6,7 @@
     <PreferenceCategory
         android:title="@string/interface_title"
         app:iconSpaceReserved="false">
+
         <ListPreference
             app:defaultValue="@string/interface_themes_follow_system_value"
             app:entries="@array/themeKeys"
@@ -23,6 +24,7 @@
             app:key="@string/interface_scroll_bar_key"
             app:summary="@string/interface_scroll_bar_summary"
             app:title="@string/interface_scroll_bar_title" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -42,11 +44,13 @@
             app:key="@string/function_outdated_target_order_by_package_name_first_key"
             app:summary="@string/function_outdated_target_order_by_package_name_first_summary"
             app:title="@string/function_outdated_target_order_by_package_name_first_title" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
         android:title="@string/about_title"
         app:iconSpaceReserved="false">
+
         <Preference
             app:iconSpaceReserved="false"
             app:key="@string/about_shop_key"
@@ -82,6 +86,7 @@
             app:key="@string/about_version_key"
             app:title="@string/about_version_title"
             tools:summary="@string/about_version_summary" />
+
     </PreferenceCategory>
 
 </PreferenceScreen>
